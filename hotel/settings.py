@@ -1,6 +1,8 @@
 
 import os
 from pathlib import Path
+import pymysql
+pymysql.install_as_MySQLdb()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -67,16 +69,14 @@ WSGI_APPLICATION = 'hotel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hotel_stayinn',
-        'USER':'root',
-        'PASSWORD':'chetan',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'NAME': 'hotel_stay-inn-db',
+        'USER':'hotel_stay_inn_db_user',
+        'PASSWORD':'ak60Qy0q9OlP7niNJAxEqmLveG75a2Vm',
+        'HOST':'dpg-d19ukbqdbo4c73btnr5g-a',
+        'PORT':'5432'
     }
 }
 
-import pymysql
-pymysql.install_as_MySQLdb()
 
 
 
