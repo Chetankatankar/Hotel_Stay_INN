@@ -1,0 +1,263 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+    <!-- Favicon -->
+    <link href="{% static 'images/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="{% static 'lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' %}" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/about.css" rel="stylesheet"> -->
+
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarala:wght@400;700&display=swap');
+
+     .lines{
+        font-family: "Sarala", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .underline{
+        width: 100px;
+        height: 5px;
+        background-color: orange;
+        border-radius: 5px;
+    }
+    .video{
+        width: 100%;
+    }
+    .video img{
+        width: 100%;
+        height: 100vh;
+    }
+    .hotel-footer{
+        height: 100px;
+        width: 100%;
+        color: whitesmoke;
+    }
+    .navbar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+    </style>
+  </head>
+  <body>
+           <!-- Navbar Section  -->
+            <div class="container-fluid bg-dark px-0">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <!-- <a href="index.html" class="navbar-brand d-block d-lg-none"> -->
+                            <h1 class="me-5  fs-1 text-warning text-uppercase fw-bold">HOTEL STAY INN!</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                                <a href="{% url 'about' %}" class="nav-item nav-link active">About</a>
+                                <a href="{% url 'service' %}" class="nav-item nav-link">Our Services</a>
+                                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+  
+
+                <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container pt-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <h6 class="section-title text-start text-warning text-uppercase fs-3 fw-bold">About Us</h6>
+                        <div class="underline"></div>
+                        <h1 class="mb-4 mt-3">Welcome to <span class="text-warning text-uppercase fs-3">Hotel Stay Inn</span></h1>
+                        <p class="lines mb-4">Welcome to Hotel Stay Inn, your perfect getaway in the city.
+                                       Enjoy spacious AC rooms with free Wi-Fi and 24/7 room service.
+                                       Our restaurant serves delicious multi-cuisine meals.
+                                       Located at M.B.Patel Road Sakoli,
+                                       Book now for a comfortable and budget-friendly stay!</p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-hotel fa-2x text-warning mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">12</h2>
+                                        <p class="mb-0">Rooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users-cog fa-2x text-warning mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">6</h2>
+                                        <p class="mb-0">Staffs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users fa-2x text-warning mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">94</h2>
+                                        <p class="mb-0">Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <a class="btn btn-warning py-3 px-5 mt-2" href="">Explore More</a> -->
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="{% static 'images/about-1.jpg' %}" style="margin-top: 25%;">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="{% static 'images/about-2.jpg' %}">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="{% static 'images/about-3.jpg' %}">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="{% static 'images/about-4.jpg' %}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+         <hr>
+
+        <!-- Hotel information  -->
+        <div class="container-xxl py-5 px-0">
+            <div class="row g-0">
+                <div class="col-md-6 bg-dark d-flex align-items-center">
+                    <div class="p-5 mt-2">
+                        <h6 class="section-title text-start text-white text-uppercase mb-3">HOTEL STAY INN🎁</h6>
+                        <p class="text-white mb-4">Hotel Stay Inn was started in 2020 with the aim to give guests a clean, comfortable, and affordable place to stay. <br> Since then, it has become a popular choice for both business and family travelers. <br> The hotel is located in a prime area, close to markets, tourist spots, and transport. We offer modern rooms, free Wi-Fi, tasty food, and friendly service. <br> Our goal is to make every guest feel at home with a peaceful and relaxing stay.🏠</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="video">
+                        <img src="{% static 'images/carousel-1.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-warning text-uppercase fw-bold">Our Team</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-warning text-uppercase">Staffs</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'images/chetan_k.jpg' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.facebook.com/chetan.katankar.5"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.instagram.com/chetan_k__/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Chetan Katankar</h5>
+                                <small>Owner</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'images/pranay_chinchekar.jpg' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.facebook.com/pranay.chinchekar.50"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.instagram.com/pranay_chinchekar/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Pranay Chinchekar</h5>
+                                <small>Senior Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'images/nituu jiii.PNG' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.facebook.com/share/19VNrZtYWK/"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.instagram.com/mi_nitesh_/"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Nitesh Wanjari</h5>
+                                <small>Receptionist</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="{% static 'images/Nikhilll.png' %}" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-warning mx-1" href="https://www.facebook.com/nikhil.bhowate.96"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-warning mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Nikhil Bhowate</h5>
+                                <small>Accountant</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <div class="mb-3">
+      <a href="/" class="text-white mx-2">Home</a> |
+      <a href="/about" class="text-white mx-2">About</a> |
+      <a href="/service" class="text-white mx-2">Services</a> |
+      <a href="/contact" class="text-white mx-2">Contact</a>
+    </div>
+    <p class="mb-0">© 2025 Hotel Stay Inn. Designed by <a href="https://www.instagram.com/chetan_k__/" class="text-white fw-bold">@chetann!🙂_______</a></p>
+  </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
